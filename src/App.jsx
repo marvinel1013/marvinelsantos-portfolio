@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import MiniMenuBar from "./components/mini_menu_bar/MiniMenuBar";
 import NavBar from "./components/navbar/NavBar";
-import About from "./components/section/About";
-import Contact from "./components/section/Contact";
-import Hero from "./components/section/Hero";
-import Projects from "./components/section/Projects";
-import Skills from "./components/section/Skills";
 import MainPage from "./pages/MainPage";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TodoDetailsPage from "./pages/TodoDetailsPage";
+import RecipeDetailsPage from "./pages/RecipeDetailsPage";
+import NotesDetailsPage from "./pages/NotesDetailsPage";
+import MovieDetailsPage from "./pages/MovieDetailsPage";
+import LandingPageDetailsPage from "./pages/LandingPageDetailsPage";
 function App() {
   //Darkmode Theme
   const [darkmode, setDarkmode] = useState(true);
@@ -17,20 +17,32 @@ function App() {
   };
 
   return (
-    <div className={darkmode ? "dark" : " "}>
-      <div className="dark:bg-dark bg-light">
-        <nav>
-          <NavBar />
-        </nav>
-        <main>
-          <MainPage />
-        </main>
-        <MiniMenuBar
-          handleToggleDarkmode={handleToggleDarkmode}
-          darkMode={darkmode}
-        />
+    <Router>
+      <div className={darkmode ? "dark" : " "}>
+        <div className="dark:bg-dark bg-light">
+          <main>
+            <nav>
+              <NavBar />
+            </nav>
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/todoDetails" element={<TodoDetailsPage />} />
+              <Route path="/recipeDetails" element={<RecipeDetailsPage />} />
+              <Route path="/notesDetails" element={<NotesDetailsPage />} />
+              <Route path="/movieDetails" element={<MovieDetailsPage />} />
+              <Route
+                path="/landingPageDetails"
+                element={<LandingPageDetailsPage />}
+              />
+            </Routes>
+          </main>
+          <MiniMenuBar
+            handleToggleDarkmode={handleToggleDarkmode}
+            darkMode={darkmode}
+          />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

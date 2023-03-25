@@ -3,6 +3,7 @@ import { NavLinks } from "../../data/ProjectData";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 import SlideBar from "../slidebar/SlideBar.jsx";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   //mobile menu STATE
@@ -30,30 +31,34 @@ function NavBar() {
 
   return (
     <div
-      className={`fixed z-20 h-16 md:h-20 w-full dark:text-light text-dark dark:bg-dark bg-[#e1e5f2] px-5 md:px-10 ${
-        navShadow ? "shadow-md dark:shadow-primary shadow-gray-400" : " "
+      className={`fixed z-20 h-16 md:h-20 w-full dark:text-light text-dark px-5 md:px-10 ${
+        navShadow
+          ? "shadow-md dark:shadow-primary shadow-gray-400 dark:bg-dark bg-[#e1e5f2]"
+          : " "
       }  `}
     >
       <div className="w-full h-full flex items-center justify-between">
         <div className=" font-signatureFont cursor-pointer text-4xl md:text-5xl bg-gradient-to-r dark:from-secondary from-indigo-800 to-blue-600 dark:to-primary pt-2 pr-2 text-transparent bg-clip-text">
           <Link to="home" duration={800} smooth={true}>
-            Marvinel
+            <NavLink to={"/"}>Marvinel</NavLink>
           </Link>
         </div>
 
         <ul className="hidden md:flex gap-5">
           {NavLinks.map((link, index) => (
             <Link key={index} to={link} smooth={true} duration={500}>
-              <li className="capitalize tracking-wider cursor-pointer font-light hover:text-indigo-500 dark:hover:text-primary duration-300 ease-in-out">
-                {link}
-              </li>
+              <NavLink to={"/"}>
+                <li className="capitalize tracking-wider cursor-pointer dark:text-light text-indigo-500 font-light hover:text-indigo-500 dark:hover:text-primary duration-300 ease-in-out">
+                  {link}
+                </li>
+              </NavLink>
             </Link>
           ))}
         </ul>
         {/* Menu Icon */}
         <div
           onClick={handleOpenMobileMenu}
-          className="md:hidden cursor-pointer"
+          className="md:hidden cursor-pointer text-indigo-500"
         >
           <RxHamburgerMenu size={27} />
         </div>

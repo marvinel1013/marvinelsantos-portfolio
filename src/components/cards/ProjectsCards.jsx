@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ProjectsData } from "../../data/ProjectData";
 
 function ProjectsCards() {
@@ -22,9 +23,11 @@ function ProjectsCards() {
               <h2 className="md:text-xl text-white font-extrabold">
                 {data.tech}
               </h2>
-              <span className="p-3 px-8 md:px-16 rounded-lg text-light bg-blue-700 hover:bg-blue-500">
-                More Info
-              </span>
+              <Link to={data.link}>
+                <span className="p-3 px-8 md:px-16 rounded-lg text-light bg-blue-700 hover:bg-blue-500">
+                  More Info
+                </span>
+              </Link>
             </div>
           </div>
         </div>

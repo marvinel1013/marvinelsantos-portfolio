@@ -1,4 +1,4 @@
-import Text from "../components/reusable_text/Text";
+import Text from "../components/reusable_components/reusable_text/Text";
 import React, { useState } from "react";
 import { movieAppImgData } from "../data/ProjectData";
 import CoverPhoto from "../assets/projects-screen-shot/movie-app/cover.png";

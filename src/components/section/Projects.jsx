@@ -1,6 +1,5 @@
 import ProjectsCards from "../cards/ProjectsCards";
-import Text from "../reusable_text/Text";
-
+import Text from "../reusable_components/reusable_text/Text";
 function Projects() {
   return (
     <div className="dark:text-light text-dark min-h-screen w-full pb-10 mt-28 md:mt-64">

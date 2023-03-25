@@ -1,4 +1,4 @@
-import Text from "../components/reusable_text/Text";
+import Text from "../components/reusable_components/reusable_text/Text";
 import React, { useState } from "react";
 import { todoAppImgData } from "../data/ProjectData";
 import CoverPhoto from "../assets/projects-screen-shot/todo-app/cover.png";

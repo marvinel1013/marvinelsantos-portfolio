@@ -1,4 +1,4 @@
-import Text from "../reusable_text/Text";
+import Text from "../reusable_components/reusable_text/Text";
 import Typewriter from "typewriter-effect";
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -6,11 +6,30 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Hero() {
   const icons = [
-    <MdOutlineMail />,
-    <FaFacebook />,
-    <FaLinkedinIn />,
-    <FaGithub />,
-    <BsFillPersonLinesFill />,
+    {
+      icon: <MdOutlineMail />,
+      link: "",
+    },
+
+    {
+      icon: <FaLinkedinIn />,
+      link: "",
+    },
+
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/marvinel.santos/",
+    },
+
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/marvinel1013",
+    },
+
+    {
+      icon: <BsFillPersonLinesFill />,
+      link: "https://www.facebook.com/marvinel.santos/",
+    },
   ];
   return (
     <div className="h-screen w-full dark:text-light text-dark">
@@ -47,7 +66,9 @@ function Hero() {
                   className="text-indigo-700 dark:text-light dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-3 md:p-5 rounded-full text-2xl animate-bounce cursor-pointer"
                   key={index}
                 >
-                  {icon}
+                  <a href={icon?.link} target="_blank">
+                    {icon.icon}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -1,4 +1,4 @@
-import Text from "../reusable_text/Text";
+import Text from "../reusable_components/reusable_text/Text";
 import SkillsTechCards from "../cards/SkillsTechCards";
 
 function Skills() {

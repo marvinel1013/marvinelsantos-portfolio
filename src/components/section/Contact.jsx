@@ -1,4 +1,4 @@
-import Text from "../reusable_text/Text";
+import Text from "../reusable_components/reusable_text/Text";
 import CoverImage from "../../assets/images/cloud-bg.png";
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import MiniMenuBar from "./components/mini_menu_bar/MiniMenuBar";
 import NavBar from "./components/navbar/NavBar";
 import About from "./components/section/About";
+import Contact from "./components/section/Contact";
 import Hero from "./components/section/Hero";
+import Projects from "./components/section/Projects";
 import Skills from "./components/section/Skills";
+import MainPage from "./pages/MainPage";
 
 function App() {
   //Darkmode Theme
-  const [darkmode, setDarkmode] = useState(false);
+  const [darkmode, setDarkmode] = useState(true);
 
   const handleToggleDarkmode = () => {
     setDarkmode((prevMode) => !prevMode);
@@ -19,21 +23,12 @@ function App() {
           <NavBar />
         </nav>
         <main>
-          {/* Hero Section */}
-          <div>
-            <Hero />
-          </div>
-
-          {/* About Section */}
-          <div>
-            <About />
-          </div>
-
-          {/* Skills Section */}
-          <div>
-            <Skills />
-          </div>
+          <MainPage />
         </main>
+        <MiniMenuBar
+          handleToggleDarkmode={handleToggleDarkmode}
+          darkMode={darkmode}
+        />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MiniMenuBar from "./components/mini_menu_bar/MiniMenuBar";
 import MainPage from "./pages/MainPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -7,9 +7,18 @@ import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 import NotesDetailsPage from "./pages/NotesDetailsPage";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 import LandingPageDetailsPage from "./pages/LandingPageDetailsPage";
+import SplashScreen from "./components/splash_screen/SplashScreen";
+
 function App() {
   //Darkmode Theme
   const [darkmode, setDarkmode] = useState(true);
+  const [onSplash, setOnSplash] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOnSplash(false);
+    }, 1780);
+  }, []);
 
   const handleToggleDarkmode = () => {
     setDarkmode((prevMode) => !prevMode);
@@ -18,23 +27,27 @@ function App() {
   return (
     <Router>
       <div className={darkmode ? "dark" : " "}>
-        <div className="dark:bg-dark bg-light">
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/todoDetails" element={<TodoDetailsPage />} />
-            <Route path="/recipeDetails" element={<RecipeDetailsPage />} />
-            <Route path="/notesDetails" element={<NotesDetailsPage />} />
-            <Route path="/movieDetails" element={<MovieDetailsPage />} />
-            <Route
-              path="/landingPageDetails"
-              element={<LandingPageDetailsPage />}
+        {onSplash ? (
+          <SplashScreen />
+        ) : (
+          <div className="dark:bg-dark bg-light">
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/todoDetails" element={<TodoDetailsPage />} />
+              <Route path="/recipeDetails" element={<RecipeDetailsPage />} />
+              <Route path="/notesDetails" element={<NotesDetailsPage />} />
+              <Route path="/movieDetails" element={<MovieDetailsPage />} />
+              <Route
+                path="/landingPageDetails"
+                element={<LandingPageDetailsPage />}
+              />
+            </Routes>
+            <MiniMenuBar
+              handleToggleDarkmode={handleToggleDarkmode}
+              darkMode={darkmode}
             />
-          </Routes>
-          <MiniMenuBar
-            handleToggleDarkmode={handleToggleDarkmode}
-            darkMode={darkmode}
-          />
-        </div>
+          </div>
+        )}
       </div>
     </Router>
   );

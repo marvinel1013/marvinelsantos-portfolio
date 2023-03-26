@@ -8,12 +8,12 @@ function Hero() {
   const icons = [
     {
       icon: <MdOutlineMail />,
-      link: "",
+      link: "mailto:1013marvinel@gmail.com",
     },
 
     {
       icon: <FaLinkedinIn />,
-      link: "",
+      link: "https://www.facebook.com/marvinel.santos/",
     },
 
     {
@@ -28,7 +28,8 @@ function Hero() {
 
     {
       icon: <BsFillPersonLinesFill />,
-      link: "https://www.facebook.com/marvinel.santos/",
+      link: "/",
+      download: true,
     },
   ];
   return (
@@ -66,7 +67,7 @@ function Hero() {
                   className="text-indigo-700 dark:text-light dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-3 md:p-5 rounded-full text-2xl animate-bounce cursor-pointer"
                   key={index}
                 >
-                  <a href={icon?.link} target="_blank">
+                  <a href={icon.link} download={icon.download} target="_blank">
                     {icon.icon}
                   </a>
                 </li>

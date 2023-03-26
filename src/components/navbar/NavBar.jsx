@@ -3,7 +3,6 @@ import { NavLinks } from "../../data/ProjectData";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 import SlideBar from "../slidebar/SlideBar.jsx";
-import { NavLink } from "react-router-dom";
 
 function NavBar() {
   //mobile menu STATE
@@ -40,18 +39,16 @@ function NavBar() {
       <div className="w-full h-full flex items-center justify-between">
         <div className=" font-signatureFont cursor-pointer text-4xl md:text-5xl bg-gradient-to-r dark:from-secondary from-indigo-800 to-blue-600 dark:to-primary pt-2 pr-2 text-transparent bg-clip-text">
           <Link to="home" duration={800} smooth={true}>
-            <NavLink to={"/"}>Marvinel</NavLink>
+            Marvinel
           </Link>
         </div>
 
         <ul className="hidden md:flex gap-5">
           {NavLinks.map((link, index) => (
             <Link key={index} to={link} smooth={true} duration={500}>
-              <NavLink to={"/"}>
-                <li className="capitalize tracking-wider cursor-pointer dark:text-light text-indigo-500 font-light hover:text-indigo-500 dark:hover:text-primary duration-300 ease-in-out">
-                  {link}
-                </li>
-              </NavLink>
+              <li className="capitalize tracking-wider cursor-pointer dark:text-light text-indigo-500 font-light hover:text-indigo-500 dark:hover:text-primary duration-300 ease-in-out">
+                {link}
+              </li>
             </Link>
           ))}
         </ul>

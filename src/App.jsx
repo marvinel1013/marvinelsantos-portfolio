@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MiniMenuBar from "./components/mini_menu_bar/MiniMenuBar";
-import NavBar from "./components/navbar/NavBar";
 import MainPage from "./pages/MainPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TodoDetailsPage from "./pages/TodoDetailsPage";
@@ -20,22 +19,17 @@ function App() {
     <Router>
       <div className={darkmode ? "dark" : " "}>
         <div className="dark:bg-dark bg-light">
-          <main>
-            <nav>
-              <NavBar />
-            </nav>
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/todoDetails" element={<TodoDetailsPage />} />
-              <Route path="/recipeDetails" element={<RecipeDetailsPage />} />
-              <Route path="/notesDetails" element={<NotesDetailsPage />} />
-              <Route path="/movieDetails" element={<MovieDetailsPage />} />
-              <Route
-                path="/landingPageDetails"
-                element={<LandingPageDetailsPage />}
-              />
-            </Routes>
-          </main>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/todoDetails" element={<TodoDetailsPage />} />
+            <Route path="/recipeDetails" element={<RecipeDetailsPage />} />
+            <Route path="/notesDetails" element={<NotesDetailsPage />} />
+            <Route path="/movieDetails" element={<MovieDetailsPage />} />
+            <Route
+              path="/landingPageDetails"
+              element={<LandingPageDetailsPage />}
+            />
+          </Routes>
           <MiniMenuBar
             handleToggleDarkmode={handleToggleDarkmode}
             darkMode={darkmode}

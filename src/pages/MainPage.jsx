@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "../components/navbar/NavBar";
 import About from "../components/section/About";
 import Contact from "../components/section/Contact";
 import Hero from "../components/section/Hero";
@@ -8,6 +9,11 @@ import Skills from "../components/section/Skills";
 function MainPage() {
   return (
     <div>
+      {/* NavBar */}
+      <nav>
+        <NavBar />
+      </nav>
+
       {/* Hero Section */}
       <div name="home">
         <Hero />

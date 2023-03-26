@@ -5,10 +5,25 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Contact() {
   const icons = [
-    <MdOutlineMail />,
-    <FaFacebook />,
-    <FaLinkedinIn />,
-    <FaGithub />,
+    {
+      icon: <MdOutlineMail />,
+      link: "mailto:1013marvinel@gmail.com",
+    },
+
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://www.facebook.com/marvinel.santos/",
+    },
+
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/marvinel.santos/",
+    },
+
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/marvinel1013",
+    },
   ];
   return (
     <div className="dark:text-light text-dark min-h-full w-full mt-28 md:mt-64 pb-28">
@@ -50,7 +65,9 @@ function Contact() {
                     className="text-indigo-700 hover:scale-110 duration-300 ease-in dark:text-light md:p-4 p-3 text-xl md:text-2xl rounded-full dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary cursor-pointer dark:animate-pulse"
                     key={index}
                   >
-                    {icon}
+                    <a href={icon.link} target="_blank">
+                      {icon.icon}
+                    </a>
                   </li>
                 ))}
               </ul>

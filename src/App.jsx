@@ -8,6 +8,9 @@ import NotesDetailsPage from "./pages/NotesDetailsPage";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 import LandingPageDetailsPage from "./pages/LandingPageDetailsPage";
 import SplashScreen from "./components/splash_screen/SplashScreen";
+import PorfolioDetailsPage from "./pages/PorfolioDetailsPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   //Darkmode Theme
@@ -23,6 +26,11 @@ function App() {
   const handleToggleDarkmode = () => {
     setDarkmode((prevMode) => !prevMode);
   };
+
+  AOS.init({
+    duration: 1000,
+    offset: 0,
+  });
 
   return (
     <Router>
@@ -40,6 +48,10 @@ function App() {
               <Route
                 path="/landingPageDetails"
                 element={<LandingPageDetailsPage />}
+              />
+              <Route
+                path="/portfolioDetails"
+                element={<PorfolioDetailsPage />}
               />
             </Routes>
             <MiniMenuBar

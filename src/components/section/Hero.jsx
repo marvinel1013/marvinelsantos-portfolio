@@ -36,7 +36,11 @@ function Hero() {
     <div className="h-screen w-full dark:text-light text-dark">
       <div className="h-full w-full max-w-6xl mx-auto flex items-center justify-center">
         <div className="text-center">
-          <h2 className=" text-sm md:text-lg tracking-widest uppercase font-light mb-8 dark:animate-pulse">
+          <h2
+            className=" text-sm md:text-lg tracking-widest uppercase font-light mb-8 dark:animate-pulse"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             let's build something together
           </h2>
           <h1 className="text-4xl md:text-7xl tracking-tight font-black">

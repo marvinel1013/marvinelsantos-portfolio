@@ -40,12 +40,14 @@ function About() {
               to achieve my dreams to become a Full Stack Web Developer.
             </p>
             <div className="flex justify-center lg:justify-start">
-              <Button style="md:p-4 md:text-base text-sm p-3 font-semibold flex items-center gap-2 rounded-md mt-8">
-                Download CV{" "}
-                <span className="animate-bounce">
-                  <BsDownload size={23} />
-                </span>
-              </Button>
+              <a href="/MarvinelSantosResume.pdf" download={true}>
+                <Button style="md:p-4 md:text-base text-sm p-3 font-semibold flex items-center gap-2 rounded-md mt-8">
+                  Download CV{" "}
+                  <span className="animate-bounce">
+                    <BsDownload size={23} />
+                  </span>
+                </Button>
+              </a>
             </div>
           </div>
 

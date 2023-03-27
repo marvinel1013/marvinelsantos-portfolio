@@ -32,6 +32,18 @@ import TodoAppImg3 from "../assets/projects-screen-shot/todo-app/3.png";
 import TodoAppImg4 from "../assets/projects-screen-shot/todo-app/4.png";
 import TodoAppImg5 from "../assets/projects-screen-shot/todo-app/5.png";
 import TodoAppImg6 from "../assets/projects-screen-shot/todo-app/6.png";
+import PortfolioAppImg1 from "../assets/projects-screen-shot/portfolio-app/1.png";
+import PortfolioAppImg2 from "../assets/projects-screen-shot/portfolio-app/2.png";
+import PortfolioAppImg3 from "../assets/projects-screen-shot/portfolio-app/3.png";
+import PortfolioAppImg4 from "../assets/projects-screen-shot/portfolio-app/4.png";
+import PortfolioAppImg5 from "../assets/projects-screen-shot/portfolio-app/5.png";
+import PortfolioAppImg6 from "../assets/projects-screen-shot/portfolio-app/6.png";
+import PortfolioAppImg7 from "../assets/projects-screen-shot/portfolio-app/7.png";
+import PortfolioAppImg8 from "../assets/projects-screen-shot/portfolio-app/8.png";
+import PortfolioAppImg9 from "../assets/projects-screen-shot/portfolio-app/9.png";
+import PortfolioAppImg10 from "../assets/projects-screen-shot/portfolio-app/10.png";
+import PortfolioAppImg11 from "../assets/projects-screen-shot/portfolio-app/11.png";
+import PortfolioAppImg12 from "../assets/projects-screen-shot/portfolio-app/12.png";
 
 export const NavLinks = ["home", "about", "skills", "projects", "contact"];
 
@@ -120,4 +132,19 @@ export const todoAppImgData = [
   TodoAppImg4,
   TodoAppImg5,
   TodoAppImg6,
+];
+
+export const portfolioAppImgData = [
+  PortfolioAppImg1,
+  PortfolioAppImg2,
+  PortfolioAppImg3,
+  PortfolioAppImg4,
+  PortfolioAppImg5,
+  PortfolioAppImg6,
+  PortfolioAppImg7,
+  PortfolioAppImg8,
+  PortfolioAppImg9,
+  PortfolioAppImg10,
+  PortfolioAppImg11,
+  PortfolioAppImg12,
 ];

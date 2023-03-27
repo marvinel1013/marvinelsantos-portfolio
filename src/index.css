@@ -10,3 +10,14 @@
     font-family: "Kumbh Sans", sans-serif;
   }
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #45a0f5;
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: silver;
+}

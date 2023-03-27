@@ -30,10 +30,8 @@ function NavBar() {
 
   return (
     <div
-      className={`fixed z-20 h-16 md:h-20 w-full dark:text-light text-dark px-5 md:px-10 ${
-        navShadow
-          ? "shadow-md dark:shadow-primary shadow-gray-400 dark:bg-dark bg-[#e1e5f2]"
-          : " "
+      className={`fixed z-20 h-16 md:h-20 w-full dark:text-light text-dark dark:bg-dark bg-[#e1e5f2] px-5 md:px-10 ${
+        navShadow ? "shadow-md dark:shadow-primary shadow-gray-400" : " "
       }  `}
     >
       <div className="w-full h-full flex items-center justify-between">

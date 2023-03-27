@@ -3,8 +3,8 @@ import { RotatingSquare } from "react-loader-spinner";
 function SplashScreen() {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-dark">
-      <div className="flex items-center gap-3 md:gap-7">
-        <div className="w-12 md:w-24">
+      <div className="flex items-center gap-2 md:gap-7">
+        <div className="w-10 md:w-24">
           <RotatingSquare
             color="#45a0f5"
             ariaLabel="rotating-square-loading"
@@ -20,7 +20,7 @@ function SplashScreen() {
             Santos
           </div>
         </div>
-        <div className="w-12 md:w-24">
+        <div className="w-10 md:w-24">
           <RotatingSquare
             color="#45a0f5"
             ariaLabel="rotating-square-loading"

@@ -2,6 +2,7 @@ import Button from "../reusable_components/reusable_button/Button";
 import Text from "../reusable_components/reusable_text/Text";
 import { BsDownload } from "react-icons/bs";
 import AboutImage from "../../assets/images/AboutImg.jpg";
+import MyPhoto from "../../assets/images/MyPhoto.png";
 
 function About() {
   return (
@@ -49,11 +50,13 @@ function About() {
             </div>
           </div>
 
-          <img
-            src={AboutImage}
-            alt="about-image"
-            className="md:w-[300px] w-[300px] hover:skew-y-12 duration-500 rounded-lg cursor-pointer p-3 shadow-lg dark:shadow-lg shadow-gray-500 dark:shadow-primary lg:mt-0 mt-16"
-          />
+          <div className="p-3 bg-white dark:bg-black  hover:skew-y-12 duration-500 rounded-lg cursor-pointer shadow-lg dark:shadow-lg shadow-gray-500 dark:shadow-primary lg:mt-0 mt-16">
+            <img
+              src={MyPhoto}
+              alt="about-image"
+              className="md:w-[300px] rounded-lg bg-gradient-to-r from-[#1F3A68] to-[#27384C] w-[300px]"
+            />
+          </div>
         </div>
       </div>
     </div>

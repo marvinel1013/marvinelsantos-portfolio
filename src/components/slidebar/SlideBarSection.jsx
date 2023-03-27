@@ -7,11 +7,31 @@ import { Link } from "react-scroll";
 
 function SlideBarSection({ handleOpenMobileMenu }) {
   const icons = [
-    <MdOutlineMail />,
-    <FaFacebook />,
-    <FaLinkedinIn />,
-    <FaGithub />,
-    <BsFillPersonLinesFill />,
+    {
+      icon: <MdOutlineMail />,
+      link: "mailto:1013marvinel@gmail.com",
+    },
+
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/marvinel-santos13/",
+    },
+
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/marvinel.santos/",
+    },
+
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/marvinel1013",
+    },
+
+    {
+      icon: <BsFillPersonLinesFill />,
+      link: "/MarvinelSantosResume.pdf",
+      download: true,
+    },
   ];
   return (
     <div className="h-full w-full">
@@ -39,12 +59,16 @@ function SlideBarSection({ handleOpenMobileMenu }) {
         </h1>
         <ul className="mt-5 flex justify-center gap-3 items-center">
           {icons.map((icon, index) => (
-            <li
-              className="text-indigo-700 dark:text-light shadow-lg dark:shadow-md shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-2 rounded-full text-2xl"
+            <a
+              href={icon.link}
+              target={"_blank"}
               key={index}
+              download={icon.download}
             >
-              {icon}
-            </li>
+              <li className="text-indigo-700 dark:text-light shadow-lg dark:shadow-md shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-2 rounded-full text-2xl">
+                {icon.icon}
+              </li>
+            </a>
           ))}
         </ul>
       </div>

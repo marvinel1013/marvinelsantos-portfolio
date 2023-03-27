@@ -12,7 +12,7 @@ function Contact() {
 
     {
       icon: <FaLinkedinIn />,
-      link: "https://www.facebook.com/marvinel.santos/",
+      link: "https://www.linkedin.com/in/marvinel-santos13/",
     },
 
     {
@@ -61,14 +61,11 @@ function Contact() {
               </h1>
               <ul className="flex items-center justify-between mb-2">
                 {icons.map((icon, index) => (
-                  <li
-                    className="text-indigo-700 hover:scale-110 duration-300 ease-in dark:text-light md:p-4 p-3 text-xl md:text-2xl rounded-full dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary cursor-pointer dark:animate-pulse"
-                    key={index}
-                  >
-                    <a href={icon.link} target="_blank">
+                  <a href={icon.link} target="_blank" key={index}>
+                    <li className="text-indigo-700 hover:scale-110 duration-300 ease-in dark:text-light md:p-4 p-3 text-xl md:text-2xl rounded-full dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary cursor-pointer dark:animate-pulse">
                       {icon.icon}
-                    </a>
-                  </li>
+                    </li>
+                  </a>
                 ))}
               </ul>
             </div>

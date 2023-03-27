@@ -21,7 +21,7 @@ function MiniMenuBar({ handleToggleDarkmode, darkMode }) {
           </div>
         </a>
 
-        <a href="/" download={true}>
+        <a href="/MarvinelSantosResume.pdf" download={true}>
           <div className="p-2.5 md:p-3.5 rounded-full bg-blue-900/40 shadow-inner shadow-black hover:bg-blue-700/70 dark:hover:bg-blue-900/80 cursor-pointer duration-300 ease-in">
             <BsFillPersonLinesFill />
           </div>

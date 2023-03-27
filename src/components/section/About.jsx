@@ -1,7 +1,6 @@
 import Button from "../reusable_components/reusable_button/Button";
 import Text from "../reusable_components/reusable_text/Text";
 import { BsDownload } from "react-icons/bs";
-import AboutImage from "../../assets/images/AboutImg.jpg";
 import MyPhoto from "../../assets/images/MyPhoto.png";
 
 function About() {

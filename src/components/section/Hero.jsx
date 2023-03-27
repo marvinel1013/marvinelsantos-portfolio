@@ -13,7 +13,7 @@ function Hero() {
 
     {
       icon: <FaLinkedinIn />,
-      link: "https://www.facebook.com/marvinel.santos/",
+      link: "https://www.linkedin.com/in/marvinel-santos13/",
     },
 
     {
@@ -28,7 +28,7 @@ function Hero() {
 
     {
       icon: <BsFillPersonLinesFill />,
-      link: "/",
+      link: "/MarvinelSantosResume.pdf",
       download: true,
     },
   ];
@@ -63,14 +63,16 @@ function Hero() {
           <div className="w-full flex justify-center mt-16">
             <ul className="flex items-center justify-center gap-5 md:gap-10 w-full">
               {icons.map((icon, index) => (
-                <li
-                  className="text-indigo-700 dark:text-light dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-3 md:p-5 rounded-full text-2xl animate-bounce cursor-pointer"
+                <a
                   key={index}
+                  href={icon.link}
+                  download={icon.download}
+                  target="_blank"
                 >
-                  <a href={icon.link} download={icon.download} target="_blank">
+                  <li className="text-indigo-700 dark:text-light dark:shadow-md shadow-lg shadow-gray-500 dark:shadow-primary dark:even:shadow-secondary p-3 md:p-5 rounded-full text-2xl animate-bounce cursor-pointer">
                     {icon.icon}
-                  </a>
-                </li>
+                  </li>
+                </a>
               ))}
             </ul>
           </div>

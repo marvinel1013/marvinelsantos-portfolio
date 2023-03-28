@@ -35,10 +35,14 @@ function PortfolioDetailsPage() {
           className="h-full w-full object-cover opacity-30"
         />
         <div className="absolute left-0 h-full w-full top-[60%] md:top-[70%] text-light">
-          <div className="w-full max-w-6xl mx-auto px-4">
+          <div
+            className="w-full max-w-6xl mx-auto px-4"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
             <div className="w-full flex items-center justify-between">
               <h1 className="font-bold text-xl md:text-3xl">
-                Animated on Scroll Landing Page
+                My Portfolio Website
               </h1>
               <Link to={"/"}>
                 <div className="flex rounded-xl cursor-pointer items-center gap-1 bg-indigo-500 w-fit p-2 md:text-base text-sm md:p-3">
@@ -48,28 +52,48 @@ function PortfolioDetailsPage() {
               </Link>
             </div>
             <h2 className="text-sm md:text-lg mt-3">
-              React JS / Tailwind / Animated on Scroll Library
+              React JS / Tailwind / React Router
             </h2>
           </div>
         </div>
       </div>
 
       <div className="w-full max-w-6xl mx-auto mt-1 md:mt-5 px-4">
-        <h1 className="font-bold text-xl md:text-4xl">
+        <h1
+          className="font-bold text-xl md:text-4xl"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <Text>Project</Text> <Text>Description</Text>
         </h1>
 
-        <div className="mt-5 md:mt-10 flex md:flex-row flex-col items-center justify-between">
+        <div className="mt-5 md:mt-0 flex md:flex-row flex-col items-center justify-between">
           <div>
-            <h2 className="md:text-3xl font-bold">Overview</h2>
-            <p className="md:mt-5 mt-2 text-sm md:text-base md:w-[550px]">
+            <h2
+              className="md:text-3xl font-bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Overview
+            </h2>
+            <p
+              className="md:mt-5 mt-2 text-sm md:text-base md:w-[550px]"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               In this project, I created My Very Own Porfolio Website with
               smooth animation. I created it in React JS, Vite and Tailwind CSS
               as my CSS framework. I used React Router to handle my routing of
               pages. I used a library called AOS Animate on Scroll Library for
               the animation. This application is hosted in Vercel.
             </p>
-            <div className="flex text-indigo-700 dark:text-primary items-center gap-4 md:gap-8 my-4 md:mt-8 text-sm md:text-base">
+            <div
+              className="flex text-indigo-700 dark:text-primary items-center gap-4 md:gap-8 my-4 md:mt-8 text-sm md:text-base"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <a
                 href="https://github.com/marvinel1013/marvinelsantos-portfolio"
                 target={"_blank"}
@@ -89,7 +113,11 @@ function PortfolioDetailsPage() {
               </span>
             </div>
           </div>
-          <div className="md:p-4 px-3 mb-28 p-2 md:px-6 shadow-md rounded-md shadow-black md:text-start text-center md:w-fit w-full">
+          <div
+            className="md:p-4 px-3 mb-28 p-2 md:px-6 shadow-md rounded-md shadow-black md:text-start text-center md:w-fit w-full"
+            data-aos="flip-right"
+            data-aos-delay="300"
+          >
             <h3 className="text-lg md:text-2xl font-bold tracking-wide mb-5">
               Technologies
             </h3>

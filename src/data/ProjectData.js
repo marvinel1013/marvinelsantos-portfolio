@@ -87,7 +87,7 @@ export const ProjectsData = [
     title: "My Own Portfolio Website",
     appImage: PortfolioImg,
     link: "/portfolioDetails",
-    tech: "NEXT JS",
+    tech: "REACT JS",
   },
 ];
 

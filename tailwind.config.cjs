@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         signatureFont: "Great Vibes, cursive",
+        splashFont: "Poppins, sans-serif",
       },
       colors: {
         primary: "#45a0f5",

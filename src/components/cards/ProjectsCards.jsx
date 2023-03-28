@@ -8,6 +8,9 @@ function ProjectsCards() {
         <div
           key={index}
           className="group mb-5 hover:scale-105 duration-300 relative p-5 hover:shadow-none shadow-md shadow-gray-700 dark:shadow-primary rounded-lg cursor-pointer hover:bg-gradient-to-r from-indigo-800 to-blue-700"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
         >
           <img
             src={data.appImage}

@@ -12,12 +12,17 @@ function SplashScreen() {
             visible={true}
           />
         </div>
-        <div className="flex gap-2 font-signatureFont text-4xl md:text-5xl">
-          <div className=" font-signatureFont bg-gradient-to-r from-secondary to-primary pt-2 pr-2 text-transparent bg-clip-text">
+        <div
+          className="flex items-center gap-2 font-splashFont"
+          data-aos="fade-zoom-in"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <div className="text-2xl md:text-5xl font-extrabold bg-gradient-to-r from-secondary to-primary pt-2 pr-2 text-transparent bg-clip-text">
             Marvinel
           </div>
-          <div className=" font-signatureFont bg-gradient-to-r from-secondary to-primary pt-2 pr-2 text-transparent bg-clip-text">
-            Santos
+          <div className="text-2xl md:text-5xl font-extrabold bg-gradient-to-r from-secondary to-primary pt-2 pr-2 text-transparent bg-clip-text">
+            Portfolio
           </div>
         </div>
         <div className="w-10 md:w-24">

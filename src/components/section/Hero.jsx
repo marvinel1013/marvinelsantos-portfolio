@@ -38,7 +38,7 @@ function Hero() {
         <div className="text-center">
           <h2
             className=" text-sm md:text-lg tracking-widest uppercase font-light mb-8 dark:animate-pulse"
-            data-aos="zoom-in"
+            data-aos="fade-down"
             data-aos-delay="100"
           >
             let's build something together
@@ -56,16 +56,28 @@ function Hero() {
               />
             </div>
           </h1>
-          <h1 className="text-4xl tracking-tight md:text-7xl font-black mt-2 md:mt-5">
+          <h1
+            className="text-4xl tracking-tight md:text-7xl font-black mt-2 md:mt-5"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             A <Text>Front-End</Text> <Text>Web</Text> <Text>Developer</Text>
           </h1>
-          <p className="mt-10 w-full px-7 md:px-0 md:max-w-3xl mx-auto md:text-lg dark:font-extralight tracking-wide">
+          <p
+            className="mt-10 w-full px-7 md:px-0 md:max-w-3xl mx-auto md:text-lg dark:font-extralight tracking-wide"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             I love to work on web application using technologies like React,
             Next JS and Tailwind CSS and also I always looking forward to
             improve my skills and learn new technologies.
           </p>
           <div className="w-full flex justify-center mt-16">
-            <ul className="flex items-center justify-center gap-5 md:gap-10 w-full">
+            <ul
+              className="flex items-center justify-center gap-5 md:gap-10 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               {icons.map((icon, index) => (
                 <a
                   key={index}

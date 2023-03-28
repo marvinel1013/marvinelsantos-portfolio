@@ -28,16 +28,28 @@ function Contact() {
   return (
     <div className="dark:text-light text-dark min-h-full w-full mt-28 md:mt-64 pb-28">
       <div className="w-full h-full max-w-6xl mx-auto flex justify-center flex-col px-7 lg:px-3">
-        <h1 className="text-2xl md:text-4xl font-extrabold tracking-wide mb-5 text-center md:text-start">
+        <h1
+          className="text-2xl md:text-4xl font-extrabold tracking-wide mb-5 text-center md:text-start"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           <Text>CONTACT</Text>
         </h1>
 
-        <h2 className="mb-7 text-lg md:text-2xl font-bold md:text-start text-center">
+        <h2
+          className="mb-7 text-lg md:text-2xl font-bold md:text-start text-center"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           Get In Touch
         </h2>
         <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center gap-20">
           {/* LEFT SECTION */}
-          <div className=" shadow-lg dark:shadow-md shadow-gray-500 dark:shadow-secondary rounded-xl p-5 flex flex-col justify-between h-[700px] w-fit">
+          <div
+            className=" shadow-lg dark:shadow-md shadow-gray-500 dark:shadow-secondary rounded-xl p-5 flex flex-col justify-between h-[700px] w-fit"
+            data-aos="flip-left"
+            data-aos-duration="3000"
+          >
             <div>
               <img
                 src={CoverImage}
@@ -72,7 +84,11 @@ function Contact() {
           </div>
 
           {/* RIGHT SECTION */}
-          <div className="shadow-lg w-full dark:shadow-md shadow-gray-500 dark:shadow-primary flex-1 min-h-[700px] rounded-xl p-5 md:px-7">
+          <div
+            className="shadow-lg w-full dark:shadow-md shadow-gray-500 dark:shadow-primary flex-1 min-h-[700px] rounded-xl p-5 md:px-7"
+            data-aos="flip-right"
+            data-aos-duration="3000"
+          >
             <form
               action="https://getform.io/f/76e8c8f1-7261-4bec-acdc-88144c422815"
               method="POST"

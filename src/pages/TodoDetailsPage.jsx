@@ -36,7 +36,11 @@ function TodoDetailsPage() {
           className="h-full w-full object-cover opacity-10"
         />
         <div className="absolute left-0 h-full w-full top-[60%] md:top-[70%] text-light">
-          <div className="w-full max-w-6xl mx-auto px-4">
+          <div
+            className="w-full max-w-6xl mx-auto px-4"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
             <div className="w-full flex items-center justify-between">
               <h1 className="font-bold text-xl md:text-3xl">TODO LIST APP</h1>
               <Link to={"/"}>
@@ -54,14 +58,28 @@ function TodoDetailsPage() {
       </div>
 
       <div className="w-full max-w-6xl mx-auto mt-1 md:mt-5 px-4">
-        <h1 className="font-bold text-xl md:text-4xl">
+        <h1
+          className="font-bold text-xl md:text-4xl"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <Text>Project</Text> <Text>Description</Text>
         </h1>
 
-        <div className="mt-5 md:mt-10 flex md:flex-row flex-col items-center justify-between">
+        <div className="mt-5 md:mt-0 flex md:flex-row flex-col items-center justify-between">
           <div>
-            <h2 className="md:text-3xl font-bold">Overview</h2>
-            <p className="md:mt-5 mt-2 text-sm md:text-base md:w-[550px]">
+            <h2
+              className="md:text-3xl font-bold"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Overview
+            </h2>
+            <p
+              className="md:mt-5 mt-2 text-sm md:text-base md:w-[550px]"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               In this project, I created a Complete Todo Application with all
               features. I do all the Create, Read, Update and Delete (CRUD)
               operations. I used React JS, Vite and Tailwind CSS and I used
@@ -69,7 +87,13 @@ function TodoDetailsPage() {
               animations using Framer Motion and I used localStorage to persist
               the data in the application. This Application is hosted in Vercel.
             </p>
-            <div className="flex text-indigo-700 dark:text-primary items-center gap-4 md:gap-8 my-4 md:mt-8 text-sm md:text-base">
+            <div
+              className="flex text-indigo-700 dark:text-primary items-center gap-4 md:gap-8 my-4 md:mt-8 text-sm md:text-base"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <a
                 href="https://github.com/marvinel1013/Todo-App"
                 target={"_blank"}
@@ -98,7 +122,11 @@ function TodoDetailsPage() {
               </span>
             </div>
           </div>
-          <div className="md:p-4 px-3 mb-28 p-2 md:px-6 shadow-md rounded-md shadow-black md:text-start text-center md:w-fit w-full">
+          <div
+            className="md:p-4 px-3 mb-28 p-2 md:px-6 shadow-md rounded-md shadow-black md:text-start text-center md:w-fit w-full"
+            data-aos="flip-right"
+            data-aos-delay="300"
+          >
             <h3 className="text-lg md:text-2xl font-bold tracking-wide mb-5">
               Technologies
             </h3>

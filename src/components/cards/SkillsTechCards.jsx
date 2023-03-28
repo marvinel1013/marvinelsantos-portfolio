@@ -80,6 +80,8 @@ function SkillsTechCards() {
         <div
           className="group cursor-pointer flex items-center justify-center flex-col gap-5 hover:shadow hover:shadow-gray-500 dark:hover:shadow-gray-800 shadow-inner dark:shadow-black shadow-gray-400 py-4 p-2 rounded-lg"
           key={index}
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             src={data.logo}

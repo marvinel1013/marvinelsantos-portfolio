@@ -73,7 +73,7 @@ function About() {
           </div>
 
           <div
-            className="p-3 bg-white dark:bg-black  hover:skew-y-12 duration-500 rounded-lg cursor-pointer shadow-lg dark:shadow-lg shadow-gray-500 dark:shadow-primary lg:mt-0 mt-16"
+            className="p-3 bg-white dark:bg-black duration-500 rounded-lg cursor-pointer shadow-lg dark:shadow-lg shadow-gray-500 dark:shadow-primary lg:mt-0 mt-16"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1500"
